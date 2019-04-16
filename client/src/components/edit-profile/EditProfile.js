@@ -46,10 +46,8 @@ class CreateProfile extends Component {
     if (nextProps.profile.profile) {
       const profile = nextProps.profile.profile;
 
-      // Bring skills array back to CSV
       const skillsCSV = profile.skills.join(',');
 
-      // If profile field doesnt exist, make empty string
       profile.company = !isEmpty(profile.company) ? profile.company : '';
       profile.website = !isEmpty(profile.website) ? profile.website : '';
       profile.location = !isEmpty(profile.location) ? profile.location : '';
@@ -74,7 +72,6 @@ class CreateProfile extends Component {
         ? profile.social.instagram
         : '';
 
-      // Set component fields state
       this.setState({
         handle: profile.handle,
         company: profile.company,
@@ -175,7 +172,6 @@ class CreateProfile extends Component {
       );
     }
 
-    // Select options for status
     const options = [
       { label: '* Select Professional Status', value: 0 },
       { label: 'Developer', value: 'Developer' },
