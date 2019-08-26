@@ -1,3 +1,3 @@
 OutBoom
 
-A Social Site connecting people...
+A Social site connecting people - developed using React, Node, Express and MongoDB.
